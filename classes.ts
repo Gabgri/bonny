@@ -34,7 +34,7 @@ export class Incentivo implements IIncentivo {
     }
 
     assegnaAStartup(startup: IStartup): void {
-        console.log(`La startup "${startup.name}" ha ricevuto ${this.description} del valore di ${this.value}€, 
+        console.log(`La startup "${startup.name}" ha ricevuto un ${this.description} del valore di ${this.value}€, 
             numero identificativo "${this.id}", 
             grazie al suo impegno nell'ottenere: "${this.criteria}"`);
     }
