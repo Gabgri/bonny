@@ -1,6 +1,6 @@
 import { Startup, Incentivo, Cittadino } from "./classes";
 
-const wearableFitness = new Startup("Wearable Fitness", "Wearable", "Tecnologie per misurare i tuoi valori mentre fai sport",["Smartwatch"]);
+const wearableFitness = new Startup("Wearable Fitness", "Wearable", "Tecnologie per misurare i tuoi valori mentre fai sport",["Smartwatch", "Anelli tech"]);
 const innovationSportlab = new Startup("Innovation SportLab","Attrezzature","Nuove attrezzature innovative per l'allenamento",["Panche", " Manubri", " Tapirulan", " Cyclette"]);
 const tennisWorld = new Startup("Tennis World", "Tennis", "Articoli a 360 gradi per il tennis",["Racchette", " Palline", " Cappellini", " Reti"]);
 

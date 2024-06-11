@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 var classes_1 = require("./classes");
-var wearableFitness = new classes_1.Startup("Wearable Fitness", "Wearable", "Tecnologie per misurare i tuoi valori mentre fai sport", ["Smartwatch"]);
+var wearableFitness = new classes_1.Startup("Wearable Fitness", "Wearable", "Tecnologie per misurare i tuoi valori mentre fai sport", ["Smartwatch", "Anelli tech"]);
 var innovationSportlab = new classes_1.Startup("Innovation SportLab", "Attrezzature", "Nuove attrezzature innovative per l'allenamento", ["Panche", " Manubri", " Tapirulan", " Cyclette"]);
 var tennisWorld = new classes_1.Startup("Tennis World", "Tennis", "Articoli a 360 gradi per il tennis", ["Racchette", " Palline", " Cappellini", " Reti"]);
 var incentivoMax = new classes_1.Incentivo(8111, "incentivo massimo", 8000, ["emissioni zero", " prodotti ecosostenibili", " prodotti costruiti in italia"]);

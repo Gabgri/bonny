@@ -55,8 +55,9 @@ export class Cittadino implements ICittadino {
 
     partecipaAttività(startup: IStartup): void {
         console.log(`Congratulazioni ${this.name} ${this.surname}! grazie al tuo risparmio su Bonny puoi partecipare alle attività proposte da 
-            ${startup.name} oppure scegliere, in base alla tua età (${this.age}) e 
+            "${startup.name}".
+            Oppure scegliere, in base alla tua età (${this.age}) e 
             ai tuoi interessi (${this.sportsInterests}), di investire in prodotti per il controllo della
-            tua solute tra quelli proposti dall'azienda:"${startup.products}"`)
+            tua salute tra quelli proposti dall'azienda: ${startup.products}`)
     }
 }

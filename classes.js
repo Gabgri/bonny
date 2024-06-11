@@ -22,7 +22,7 @@ var Incentivo = /** @class */ (function () {
         this.criteria = criteria;
     }
     Incentivo.prototype.assegnaAStartup = function (startup) {
-        console.log("La startup \"".concat(startup.name, "\" ha ricevuto ").concat(this.description, " del valore di ").concat(this.value, "\u20AC, \n            numero identificativo \"").concat(this.id, "\", \n            grazie al suo impegno nell'ottenere: \"").concat(this.criteria, "\""));
+        console.log("La startup \"".concat(startup.name, "\" ha ricevuto un ").concat(this.description, " del valore di ").concat(this.value, "\u20AC, \n            numero identificativo \"").concat(this.id, "\", \n            grazie al suo impegno nell'ottenere: \"").concat(this.criteria, "\""));
     };
     return Incentivo;
 }());
@@ -35,7 +35,7 @@ var Cittadino = /** @class */ (function () {
         this.sportsInterests = sportsInterests;
     }
     Cittadino.prototype.partecipaAttività = function (startup) {
-        console.log("Congratulazioni ".concat(this.name, " ").concat(this.surname, "! grazie al tuo risparmio su Bonny puoi partecipare alle attivit\u00E0 proposte da \n            ").concat(startup.name, " in ").concat(startup.description, " oppure scegliere, in base alla tua et\u00E0 (").concat(this.age, ") e \n            ai tuoi interessi (").concat(this.sportsInterests, "), di investire in prodotti per il controllo della\n            tua solute tra quelli proposti dall'azienda:\"").concat(startup.products, "\""));
+        console.log("Congratulazioni ".concat(this.name, " ").concat(this.surname, "! grazie al tuo risparmio su Bonny puoi partecipare alle attivit\u00E0 proposte da \n            \"").concat(startup.name, "\".\n            Oppure scegliere, in base alla tua et\u00E0 (").concat(this.age, ") e \n            ai tuoi interessi (").concat(this.sportsInterests, "), di investire in prodotti per il controllo della\n            tua salute tra quelli proposti dall'azienda: ").concat(startup.products));
     };
     return Cittadino;
 }());
