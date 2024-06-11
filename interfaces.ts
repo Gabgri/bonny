@@ -2,7 +2,7 @@ export interface IStartup {
     name: string;
     areaOfInterest: string;
     description: string;
-    product: string;
+    products: string[];
     riceviIncentivo(incentivo: IIncentivo): void;
 }
 
@@ -10,7 +10,7 @@ export interface IIncentivo {
     id: number;
     description: string;
     value: number;
-    criteria: string;
+    criteria: string[];
     assegnaAStartup(startup: IStartup): void;
 }
 
@@ -18,6 +18,6 @@ export interface ICittadino {
     name: string;
     surname: string;
     age: number;
-    sportsInterests: string;
+    sportsInterests: string[];
     partecipaAttività(startup: IStartup): void
 }

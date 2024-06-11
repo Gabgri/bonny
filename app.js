@@ -1,40 +1,15 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var Startup = /** @class */ (function () {
-    function Startup(name, areaOfInterest, description, product) {
-        this.name = name;
-        this.areaOfInterest = areaOfInterest;
-        this.description = description;
-        this.product = product;
-    }
-    Startup.prototype.riceviIncentivo = function () {
-        console.log("Hai ricevuto l'incentivo");
-    };
-    return Startup;
-}());
-var Incentivo = /** @class */ (function () {
-    function Incentivo(incentivo) {
-        this.id = incentivo.id;
-        this.description = incentivo.description;
-        this.value = incentivo.value;
-        this.criteria = incentivo.criteria;
-    }
-    Incentivo.prototype.assegnaAStartup = function (startup) {
-        console.log("Assegna l'incentivo");
-    };
-    return Incentivo;
-}());
-var Cittadino = /** @class */ (function () {
-    function Cittadino(cittadino) {
-        this.name = cittadino.name;
-        this.surname = cittadino.surname;
-        this.age = cittadino.age;
-        this.sportsInterests = cittadino.sportsInterests;
-    }
-    Cittadino.prototype.partecipaAttività = function (startup) {
-        console.log("Partecipa all'attività");
-    };
-    return Cittadino;
-}());
-var culturaSport = new Startup("La Cultura dello Sport", "App per il fitness", "Azienda leader nel settore software dello sport", "App per acquistare massa muscolare");
-culturaSport.riceviIncentivo();
+var classes_1 = require("./classes");
+var wearableFitness = new classes_1.Startup("Wearable Fitness", "Wearable", "Tecnologie per misurare i tuoi valori mentre fai sport", ["Smartwatch"]);
+var innovationSportlab = new classes_1.Startup("Innovation SportLab", "Attrezzature", "Nuove attrezzature innovative per l'allenamento", ["Panche", " Manubri", " Tapirulan", " Cyclette"]);
+var tennisWorld = new classes_1.Startup("Tennis World", "Tennis", "Articoli a 360 gradi per il tennis", ["Racchette", " Palline", " Cappellini", " Reti"]);
+var incentivoMax = new classes_1.Incentivo(8111, "incentivo massimo", 8000, ["emissioni zero", " prodotti ecosostenibili", " prodotti costruiti in italia"]);
+var incentivoMid = new classes_1.Incentivo(6011, "incentivo medio", 6000, ["prodotti ecosostenibili", " prodotti costruiti in italia"]);
+var incentivoMin = new classes_1.Incentivo(4001, "incentivo minimo", 4000, ["prodotti ecosostenibili"]);
+var Marco = new classes_1.Cittadino("Marco", "Rossi", 34, ["Tennis", " Ping Pong"]);
+var Sofia = new classes_1.Cittadino("Sofia", "Verdi", 27, ["Nuoto", " Vela"]);
+var Matteo = new classes_1.Cittadino("Matteo", "Bianchi", 29, ["Calcio", " Rugby"]);
+wearableFitness.riceviIncentivo(incentivoMax);
+incentivoMid.assegnaAStartup(innovationSportlab);
+Matteo.partecipaAttività(tennisWorld);
