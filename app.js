@@ -7,9 +7,12 @@ var tennisWorld = new classes_1.Startup("Tennis World", "Tennis", "Articoli a 36
 var incentivoMax = new classes_1.Incentivo(8111, "incentivo massimo", 8000, ["emissioni zero", " prodotti ecosostenibili", " prodotti costruiti in italia"]);
 var incentivoMid = new classes_1.Incentivo(6011, "incentivo medio", 6000, ["prodotti ecosostenibili", " prodotti costruiti in italia"]);
 var incentivoMin = new classes_1.Incentivo(4001, "incentivo minimo", 4000, ["prodotti ecosostenibili"]);
-var Marco = new classes_1.Cittadino("Marco", "Rossi", 34, ["Tennis", " Ping Pong"]);
-var Sofia = new classes_1.Cittadino("Sofia", "Verdi", 27, ["Nuoto", " Vela"]);
-var Matteo = new classes_1.Cittadino("Matteo", "Bianchi", 29, ["Calcio", " Rugby"]);
-wearableFitness.riceviIncentivo(incentivoMax);
-incentivoMid.assegnaAStartup(innovationSportlab);
-Matteo.partecipaAttività(tennisWorld);
+var marco = new classes_1.Cittadino("Marco", "Rossi", 34, ["Tennis", " Ping Pong"]);
+var sofia = new classes_1.Cittadino("Sofia", "Verdi", 27, ["Nuoto", " Vela"]);
+var matteo = new classes_1.Cittadino("Matteo", "Bianchi", 29, ["Calcio", " Rugby"]);
+wearableFitness.riceviIncentivo(incentivoMin);
+incentivoMin.assegnaAStartup(wearableFitness);
+sofia.partecipaAttività(wearableFitness);
+innovationSportlab.riceviIncentivo(incentivoMax);
+incentivoMax.assegnaAStartup(innovationSportlab);
+matteo.partecipaAttività(innovationSportlab);
