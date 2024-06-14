@@ -19,5 +19,5 @@ export interface ICittadino {
     surname: string;
     age: number;
     sportsInterests: string[];
-    partecipaAttività(startup: IStartup): void
+    partecipaAttività(startup: IStartup): void;
 }
